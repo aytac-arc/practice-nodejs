@@ -1,3 +1,3 @@
 # Practice NodeJS
 
-A simple application to apply learning about NodeJS
+A simple application to apply learnings about NodeJS

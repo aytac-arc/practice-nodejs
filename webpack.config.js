@@ -1,4 +1,3 @@
-// webpack.config.js
 var webpack = require('webpack');
 
 module.exports = {
@@ -11,7 +10,4 @@ module.exports = {
     path: __dirname + '/app',
     filename: '[name].bundle.js',
   },
-  // plugins: [
-  //  new webpack.optimize.CommonsChunkPlugin({ name: 'vendor', filename: 'vendor.bundle.js' }),
-  // ],
 };

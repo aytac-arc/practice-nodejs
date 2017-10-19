@@ -1,7 +1,3 @@
-/**
- * The one and only controller used in this app.
- */
-
 class MenuController {
     static get $inject() {
       return ['$scope', 'Menu'];

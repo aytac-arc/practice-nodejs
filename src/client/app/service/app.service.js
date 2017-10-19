@@ -23,4 +23,4 @@ class App {
 
 }
 
-angular.module('app').factory('App', App);
+export default App;

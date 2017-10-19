@@ -32,4 +32,4 @@ class AppController {
 
 }
 
-angular.module('app').controller('AppController', AppController);
+export default AppController;

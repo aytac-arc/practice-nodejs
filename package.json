@@ -8,7 +8,8 @@
     "dev": "nodemon src/server/app.js --exec babel-node",
     "start": "node app/app.bundle.js --exec babel-node",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bundle": "webpack"
+    "bundle": "webpack",
+    "bundle-watch": "webpack --watch"
   },
   "repository": {
     "type": "git",

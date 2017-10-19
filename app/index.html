@@ -4,12 +4,11 @@
     <meta charset="utf-8">
     <title>Menu</title>
   </head>
-  <body ng-controller="AppController as vm">
+  <body ng-controller="MenuController as vm">
     <div class="wrapper">
       <main>
         <ul >
           <li ng-repeat="item in vm.menu">{{item.name}}</li>
-          <li>{{vm}}</li>
         </ul>
       </main>
     </div>

@@ -2,13 +2,14 @@
  * The one and only controller used in this app.
  */
 
-class AppController {
+class MenuController {
     static get $inject() {
-      return ['App'];
+      return ['$scope', 'Menu'];
     }
 
-    constructor(App) {
-      this.App = App;
+    constructor($scope, Menu) {
+      this.$scope = $scope;
+      this.Menu = Menu;
     }
 
     $onInit() {
@@ -16,20 +17,17 @@ class AppController {
     }
 
     getMenu() {
-      // this.menu = [{test: 'test'}, {test2: 'test2'}];
-      console.log('start getMenu');
       const success = (response) => {
         this.menu = angular.copy(response.menu);
-        console.log('in getMenu');
+        this.$scope.$apply();
       };
 
       const fail = (error) => error;
 
-      this.App.getMenu()
+      this.Menu.getMenu()
         .then(success, fail);
-        console.log('end getMenu');
     }
 
 }
 
-export default AppController;
+export default MenuController;
